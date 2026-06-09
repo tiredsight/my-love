@@ -1,0 +1,623 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+html {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+}
+
+body {
+    background-image: url(/images/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.zag{
+    border-radius: 40px;
+    border: 1px solid rgba(195, 147, 147, 0);
+    background-color: rgba(235, 172, 172, 0.7); 
+}
+
+.zag-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.zag h1{
+    font-size: 50px;
+    white-space: nowrap;
+    padding-left: 20px;
+}
+
+.zag h2{
+    font-size: 45px;
+    align-items: center;
+    white-space: nowrap;
+
+}
+.zag h3{
+    font-size: 50px;
+    margin-right: 20px;
+    white-space: nowrap;
+    animation: heartbeat 1.8s ease infinite;
+}
+
+/*       Fonts         */
+
+.great-vibes-regular {
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lobster-two-regular {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lobster-two-bold {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/*       CODE       */
+.vid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    animation: fadeInUp 1s ease-out;
+}
+
+.vid > p{
+    padding-top: 30px;
+    font-size: 10vw;
+}
+
+.vid > h1{
+    margin: 0;
+    font-size: 12vw;
+}
+
+.vid > h2{
+    animation: heartbeat 1.2s ease infinite;
+    font-size: 15vw;
+    padding-bottom:  1vw; ;
+}
+/* animation */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
+
+#photo-text{
+    font-size: 6vw;
+    padding-bottom: 50px;
+    border: 1px solid grey;
+    border-style:ridge;
+    border-radius: 20px 5px 20px 5px;
+    background-color:rgba(235, 172, 172, 0.7);
+    padding: 10px 50px;
+    width: fit-content;
+    margin: 0 auto;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.5);
+}
+.photo-container{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    overflow:hidden;
+}
+.photo-pal {
+    width: 280px;
+    background: white;
+    padding: 15px 15px 40px 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    margin: 30px auto;
+    transition: transform 0.3s ease;
+    animation: fadeInUp 1s ease-out;
+}
+
+.photo-pal:hover{
+    transform: rotateZ(5deg);   
+}
+
+.mess{
+    display: flex;
+    flex-direction: column ;
+    margin: 50px 0;
+    padding-left: 30px ;
+}
+
+.column-left{
+    margin: 50px 0px;
+    background-image: url(/images/mess.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 90%;
+    max-width: 500px;
+    min-height: 450px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.column-left p {
+    position: relative;
+    z-index: 1;
+    color: rgb(0, 0, 0);
+    font-size: 1.8rem;
+    font-family: "Great Vibes", cursive;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.about-with-timer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 90%;
+    margin: 50px auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.about-text-wrapper {
+    flex: 2;
+    min-width: 250px;
+}
+
+.about-title {
+    font-size: 4vw;
+    border: 1px solid grey;
+    border-style: ridge;
+    border-radius: 20px 5px 20px 5px;
+    background-color: rgba(235, 172, 172, 0.7);
+    padding: 10px 40px;
+    width: fit-content;
+    box-shadow: 3px 4px;
+    margin-bottom: 30px;
+}
+
+.about-description {
+    background: rgba(235, 172, 172, 0.5);
+    padding: 25px;
+    border-radius: 30px;
+    color: white;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    backdrop-filter: blur(3px);
+    font-family: "Lobster Two", cursive;
+}
+
+.timer-wrapper {
+    flex: 1;
+    min-width: 250px;
+    background: rgba(235, 172, 172, 0.5);
+    padding: 20px;
+    border-radius: 40px;
+    backdrop-filter: blur(3px);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.timer {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.timer-block {
+    background: rgba(0, 0, 0, 0.55);
+    border-radius: 18px;
+    padding: 12px 16px;
+    text-align: center;
+    min-width: 70px;
+}
+
+.timer-block span:first-child {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffb7c5;
+    display: block;
+    font-family: "Lobster Two", cursive;
+}
+
+.timer-label {
+    font-size: 0.75rem;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.column-right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin: 0 au;
+}
+
+.about-section {
+    max-width: 95%;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.about-title {
+    font-size: 4vw;
+    border: 1px solid grey;
+    border-style: ridge;
+    border-radius: 20px 5px 20px 5px;
+    background-color: rgba(235, 172, 172, 0.7);
+    padding: 10px 40px;
+    width: fit-content;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.3);
+    margin: 0 auto 40px auto;
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    flex: 2;
+    min-width: 250px;
+    background-image: url(/images/mess.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 35px;
+    border-radius: 30px;
+    color: rgb(0, 0, 0);
+    font-size: 1.6rem;
+    line-height: 1.6;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    font-family: "Great Vibes", cursive;
+}
+
+.about-photo {
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-photo .photo-pal {
+    margin: 0;
+    width: 220px;
+}
+
+.about-photo .photo-pal img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.polaroid-caption {
+    text-align: center;
+    margin-top: 12px;
+    font-family: "Great Vibes", cursive;
+    font-size: 30px;
+    color: #000000;
+}
+
+.timer-wrapper {
+    flex: 1;
+    min-width: 250px;
+    background: rgba(235, 172, 172, 0.5);
+    padding: 20px;
+    border-radius: 40px;
+    backdrop-filter: blur(3px);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timer-title {
+    font-family: "Great Vibes", cursive;
+    font-size: 1.8rem;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+/* Адаптация под мобилки */
+
+/* Базовые настройки для мобильных */
+@media (max-width: 768px) {
+    
+    /* Запрещаем горизонтальную прокрутку */
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+    
+    /* Все контейнеры не шире экрана */
+    .zag, .vid, .photo-container, .about-section, 
+    .timer-wrapper, .about-text, .about-photo, 
+    .timer, .timer-block, .photo-pal {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    
+    /* ЗАГОЛОВОК (шапка) */
+    .zag {
+        margin: 20px auto;
+        width: 95%;
+        padding: 10px;
+    }
+    
+    .zag-wrapper {
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+    }
+    
+    .zag h1, .zag h2, .zag h3 {
+        white-space: normal;
+        text-align: center;
+        padding: 0;
+        margin: 5px 0;
+    }
+    
+    .zag h1 {
+        font-size: 8vw;
+        order: 2;
+    }
+    
+    .zag h2 {
+        font-size: 6vw;
+        order: 1;
+    }
+    
+    .zag h3 {
+        font-size: 12vw;
+        order: 3;
+        margin-right: 0;
+    }
+    
+    /* You + Me = 💘 блок */
+    .vid {
+        margin: 10px 0;
+    }
+    
+    .vid > p {
+        font-size: 15vw;
+        padding-top: 20px;
+    }
+    
+    .vid > h1 {
+        font-size: 18vw;
+    }
+    
+    .vid > h2 {
+        font-size: 22vw;
+        padding-bottom: 20px;
+    }
+    
+    /* Our photos заголовок */
+    #photo-text {
+        font-size: 8vw;
+        padding: 8px 25px;
+        margin: 20px auto;
+        width: fit-content;
+        white-space: nowrap;
+    }
+    
+    /* Галерея фото */
+    .photo-container {
+        gap: 15px;
+        padding: 20px 10px;
+        justify-content: center;
+    }
+    
+    .photo-pal {
+        width: calc(50% - 20px);
+        min-width: 140px;
+        margin: 10px auto;
+        padding: 10px 10px 25px 10px;
+    }
+    
+    .photo-pal img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+    }
+    
+    /* Секция "О тебе, Викуся" */
+    .about-section {
+        width: 95%;
+        margin: 30px auto;
+        padding: 0;
+    }
+    
+    .about-title {
+        font-size: 7vw;
+        padding: 8px 25px;
+        margin: 0 auto 25px auto;
+        white-space: nowrap;
+    }
+    
+    /* Три колонки в столбик */
+    .about-content {
+        flex-direction: column;
+        gap: 25px;
+    }
+    
+    .about-text {
+        width: 100%;
+        padding: 20px;
+        font-size: 1.2rem;
+        order: 1;
+    }
+    
+    .about-photo {
+        order: 2;
+    }
+    
+    .about-photo .photo-pal {
+        width: 250px;
+        margin: 0 auto;
+    }
+    
+    .about-photo .photo-pal img {
+        height: 220px;
+    }
+    
+    /* Таймер */
+    .timer-wrapper {
+        order: 3;
+        width: 100%;
+        padding: 20px 15px;
+    }
+    
+    .timer-title {
+        font-size: 1.5rem;
+    }
+    
+    .timer {
+        gap: 8px;
+        justify-content: center;
+    }
+    
+    .timer-block {
+        min-width: 55px;
+        padding: 8px 10px;
+    }
+    
+    .timer-block span:first-child {
+        font-size: 1.3rem;
+    }
+    
+    .timer-label {
+        font-size: 0.65rem;
+    }
+}
+
+/* Дополнительная адаптация для очень маленьких экранов (iPhone SE, 375px) */
+@media (max-width: 450px) {
+    
+    .photo-pal {
+        width: calc(100% - 30px);
+        max-width: 250px;
+    }
+    
+    .photo-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .about-title {
+        white-space: normal;
+        text-align: center;
+        font-size: 8vw;
+    }
+    
+    .about-text {
+        font-size: 1rem;
+        padding: 15px;
+    }
+    
+    .timer-block {
+        min-width: 48px;
+        padding: 6px 8px;
+    }
+    
+    .timer-block span:first-child {
+        font-size: 1.1rem;
+    }
+    
+    .timer-label {
+        font-size: 0.55rem;
+    }
+    
+    .timer-wrapper {
+        padding: 15px 10px;
+    }
+}
+
+/* Для горизонтальной ориентации телефона */
+@media (max-width: 900px) and (orientation: landscape) {
+    .about-content {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .about-text {
+        flex: 2;
+        min-width: 200px;
+    }
+    
+    .about-photo {
+        flex: 1;
+        min-width: 150px;
+    }
+    
+    .timer-wrapper {
+        flex: 1;
+        min-width: 200px;
+    }
+    
+    .photo-pal {
+        width: calc(33% - 20px);
+    }
+}
